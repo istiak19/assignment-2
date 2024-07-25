@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.mulish-font {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Shared styles */
+
+.display-flex {
+    display: flex;
+}
+
+.btn-primary {
+    background-color: #E6533C;
+    border: none;
+    border-radius: 45px;
+    padding: 8px 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+/* Heading styles */
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 130px 0;
+    background-color: #000000;
+}
+
+.navbar-links {
+    border: 1px solid tomato;
+    border-radius: 35px;
+    padding: 4px;
+}
+
+.navbar-items {
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-links {
+    list-style: none;
+}
+
+.item {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.brand {
+    color: #E6533C;
+    font-size: 2.37rem;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/* Banner styles */
+
+.banner {
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    padding: 0 130px;
+    gap: 80px;
+}
+
+.banner-title {
+    color: #FFFFFF;
+    font-size: 4.87rem;
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+
+.banner-desco {
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 16px 40px;
+    margin-right: 16px;
+}
+
+.btn-1 {
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 45px;
+    padding: 16px 40px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.banner img{
+    position: relative;
+}
+
+.btn-2 {
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    padding: 16px 23px;
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: -170px;
+}
+
+.btn-3{
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    padding: 16px 23px;
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 280px;
+}
+
+.video-number{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.video-text{
+    font-size: 0.81rem;
+}
+
+/* Responsive media query */
+
+@media screen and (max-width: 576px) {
+
+    .navbar,
+    .banner {
+        flex-direction: column;
+    }
+
+    .btn-1,
+    .btn-primary {
+        padding: 8px 10px;
+    }
+}

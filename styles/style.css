@@ -36,6 +36,7 @@
     align-items: center;
     padding: 50px 130px 0;
     background-color: #000000ef;
+    /* background: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.1) 100%); */
 }
 
 .navbar-links {
@@ -71,6 +72,7 @@
 
 .banner {
     background-color: #000000ef;
+    /* background: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.1) 100%); */
     justify-content: center;
     align-items: center;
     padding: 0 130px;
@@ -174,7 +176,7 @@
     font-size: 0.87rem;
 }
 
-.content-imgs {
+.content-images {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 50px 185px 0;
@@ -234,12 +236,117 @@
     border-radius: 16px;
 }
 
+.bmi-content {
+    padding: 80px 0 0 340px;
+}
+
+.bmi-content-title {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.bmi-content-desco {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.87rem;
+}
+
+/* BMI Calculator Chart styles */
+
+.cal-chart {
+    display: flex;
+    gap: 170px;
+    background-color: #222222;
+    padding: 50px 180px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+td,
+th {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    padding: 10px 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+td {
+    font-size: 0.87rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.cal-bmi-title,
+caption {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.cal-bmi-desco {
+    font-size: 0.87rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+}
+
+#height,
+#age {
+    width: 280px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 8px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    background-color: #383838;
+}
+
+#weight {
+    width: 280px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 8px;
+    margin-bottom: 12px;
+    background-color: #383838;
+}
+
+#sex {
+    width: 300px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 8px;
+    background-color: #383838;
+}
+
+#select {
+    width: 612px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 8px;
+    background-color: #383838;
+}
+
+.btn-cal {
+    padding: 16px 65px;
+    margin-top: 30px;
+}
+
 /* Meet Our Team styles */
 
 .content-4 {
     background-color: black;
     padding-bottom: 80px;
-} 
+}
 
 .content-4-text {
     text-align: center;
@@ -258,42 +365,42 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
-.content-4-img{
+.content-4-img {
     margin: 0 180px;
     background-color: #222222;
     padding: 20px;
     border-radius: 18px;
 }
 
-.content-4-img-part{
+.content-4-img-part {
     position: relative;
 }
 
-.content-4-img-part-desco{
+.content-4-img-part-desco {
     position: absolute;
     bottom: 10px;
 }
 
-.content-4-img-part img{
+.content-4-img-part img {
     width: 100%;
     height: 270px;
     border-radius: 18px;
 }
 
-.content-4-img{
+.content-4-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.content-4-img-part-title{
+.content-4-img-part-title {
     font-size: 1.25rem;
     font-weight: bold;
     color: #FFFFFF;
     padding-left: 20px;
 }
 
-.content-4-img-part-text{
+.content-4-img-part-text {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.87rem;
     padding-left: 20px;
@@ -301,17 +408,17 @@
 
 /* Footer part styles */
 
-.footer{
+.footer {
     background-color: #191919;
 }
 
-.footer-desco{
+.footer-desco {
     font-size: 0.87rem;
     color: rgba(255, 255, 255, 0.5);
 }
 
 .footer-content,
-.footer-content-text{
+.footer-content-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,31 +426,37 @@
     padding: 60px 0 0;
 }
 
-.text-1-title{
+.footer-title {
+    font-size: 4.375rem;
+}
+
+.text-1-title {
     font-size: 2rem;
     font-weight: bold;
     color: #FFFFFF;
 }
-.text-1 ul{
+
+.text-1 ul {
     list-style: none;
 }
 
-.text-1 ul>li{
+.text-1 ul>li {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.43rem;
 }
 
-#hr{
-    margin: 30px 180px 0;
+#hr {
+    margin: 30px 240px 0;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-copyright{
+.footer-copyright {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.25rem;
-    padding-top: 30px;
+    padding: 30px 0;
 }
+
 /* Responsive media query */
 
 @media screen and (max-width: 576px) {
@@ -351,6 +464,7 @@
     .navbar,
     .banner,
     .contents,
+    .cal-chart,
     .footer-content,
     .footer-content-text {
         flex-direction: column;
@@ -366,13 +480,14 @@
         margin-top: 1050px;
     }
 
-    .content-imgs,
-    .content-4-img {
+    .content-4-img,
+    .content-images {
         grid-template-columns: 1fr;
         margin: 50px 100px 0;
     }
 
-    .content-2 {
+    .content-2,
+    .bmi-content {
         padding: 80px 0 0;
     }
 
@@ -380,8 +495,25 @@
         gap: 50px;
     }
 
-    .img-hidden{
+    .img-hidden {
         display: none;
     }
 
+    .cal-chart {
+        padding: 50px 50px;
+    }
+
+    #select {
+        width: 300px;
+        margin-top: 12px;
+    }
+
+    .btn-cal {
+        padding: 16px 65px;
+        margin-top: 30px;
+    }
+
+    #hr {
+        margin: 30px 180px 0;
+    }
 }

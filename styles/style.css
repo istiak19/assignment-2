@@ -9,6 +9,14 @@
     font-style: normal;
 }
 
+/* * {
+    border: 1px solid red;
+}
+
+body {
+    border: 2px dashed rgb(90, 10, 188);
+} */
+
 * {
     padding: 0;
     margin: 0;
@@ -36,7 +44,6 @@
     align-items: center;
     padding: 50px 130px 0;
     background-color: #000000ef;
-    /* background: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.1) 100%); */
 }
 
 .navbar-links {
@@ -61,9 +68,14 @@
     color: #FFFFFF;
 }
 
+.hamburger {
+    color: #FFFFFF;
+    display: none;
+}
+
 .brand {
     color: #E6533C;
-    font-size: 2.37rem;
+    font-size: 2.25rem;
     font-weight: bolder;
     font-style: italic;
 }
@@ -72,7 +84,6 @@
 
 .banner {
     background-color: #000000ef;
-    /* background: linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.1) 100%); */
     justify-content: center;
     align-items: center;
     padding: 0 130px;
@@ -183,7 +194,16 @@
     gap: 40px;
 }
 
+.content-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .content-img img {
+    width: 180px;
+    height: 180px;
     border-radius: 100px;
 }
 
@@ -191,8 +211,7 @@
     font-size: 1.12rem;
     font-weight: 600;
     color: #FFFFFF;
-    text-align: center;
-    /* margin: 0px 35px; */
+    /* text-align: center; */
 }
 
 .img-desco {
@@ -238,6 +257,7 @@
 
 .bmi-content {
     padding: 80px 0 0 340px;
+    background-color: black;
 }
 
 .bmi-content-title {
@@ -249,6 +269,7 @@
 .bmi-content-desco {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.87rem;
+    padding-bottom: 80px;
 }
 
 /* BMI Calculator Chart styles */
@@ -283,6 +304,9 @@ td {
     color: rgba(255, 255, 255, 0.5);
 }
 
+caption{
+    margin-bottom: 40px;
+}
 .cal-bmi-title,
 caption {
     font-size: 1.75rem;
@@ -308,6 +332,10 @@ caption {
     background-color: #383838;
 }
 
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 #weight {
     width: 280px;
     height: 45px;
@@ -320,8 +348,9 @@ caption {
 
 #sex {
     width: 300px;
-    height: 48px;
+    height: 46px;
     border: none;
+    color: rgba(255, 255, 255, 0.6);
     border-radius: 8px;
     padding: 0 8px;
     background-color: #383838;
@@ -331,6 +360,7 @@ caption {
     width: 612px;
     height: 48px;
     border: none;
+    color: rgba(255, 255, 255, 0.6);
     border-radius: 8px;
     padding: 0 8px;
     background-color: #383838;
@@ -461,7 +491,6 @@ caption {
 
 @media screen and (max-width: 576px) {
 
-    .navbar,
     .banner,
     .contents,
     .cal-chart,
@@ -470,14 +499,50 @@ caption {
         flex-direction: column;
     }
 
+    .navbar {
+        padding: 50px 30px 0;
+    }
+
+    .brand {
+        margin-right: 100px;
+    }
+
+    .hamburger {
+        color: #FFFFFF;
+        display: inline;
+    }
+
+    .banner-title {
+        font-size: 3.25rem;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .banner {
+        padding: 50px 70px 0;
+        gap: 40px;
+    }
+
+    .button {
+        display: flex;
+        gap: 20px;
+    }
+
     .btn-1,
     .btn-primary {
         padding: 8px 10px;
     }
 
+    .btn-2 {
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+
     .btn-3 {
         margin-left: -180px;
-        margin-top: 1050px;
+        margin-top: 500px;
     }
 
     .content-4-img,
@@ -486,9 +551,16 @@ caption {
         margin: 50px 100px 0;
     }
 
-    .content-2,
-    .bmi-content {
+    .content-2 {
         padding: 80px 0 0;
+    }
+
+    .contents {
+        margin: 0 20px;
+    }
+
+    .bmi-content {
+        padding: 80px 0 0 20px;
     }
 
     .contents {
@@ -513,7 +585,12 @@ caption {
         margin-top: 30px;
     }
 
+    .content-title {
+        font-size: 2.5rem;
+    }
+
     #hr {
-        margin: 30px 180px 0;
+        margin: 30px auto 0;
+        width: 354px;
     }
 }
